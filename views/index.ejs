@@ -38,6 +38,8 @@
 
 </style>
 <script>
+$(function() {
+
 var width = window.innerWidth;
 var height = window.innerHeight;
 
@@ -144,6 +146,7 @@ function drawLine(pointA, pointB, size){
   ctx.closePath();
   //ctx.fillRect(x2 - 1, y2 - 1, 2, 2);
 }
+});
 </script>
 <canvas id="canvas"></canvas>
 

@@ -12,6 +12,18 @@
       #section4{height:888px;background-color:#D6D6C7;padding-left:15%;padding-right:15%;}
       #footer{height:260px;background-color:rgb(50,50,50);padding-left:15%;padding-right:15%;}
       .navbar{margin-bottom:0px;}
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        }
+      .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90%;
+      }
     </style>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
@@ -45,6 +57,11 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+
+    <div class="videoWrapper">
+      <iframe src="https://player.vimeo.com/video/102787065?autoplay=1&amp;loop=1&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+
 
     <div id="section1">
       <br><br>

@@ -356,7 +356,80 @@ $(document).ready(function(){
 		
 	});
 	
+	$("#bubble-1").click(function(){
+		if (!$("#bubble-1").hasClass("active")){
+			$("#bubble-1").addClass("active");
+			
+			if($("#bubble-2").hasClass("active")){
+				$("#bubble-2").removeClass("active");
+			}
+			
+			if($("#bubble-3").hasClass("active")){
+				$("#bubble-3").removeClass("active");
+			}
+			
+			$("#bubble-1").parent().addClass("rotate1");
+			
+			if ($("#bubble-1").parent().hasClass("rotate2")){
+				$("#bubble-1").parent().removeClass("rotate2");
+			}
+			
+			if ($("#bubble-1").parent().hasClass("rotate0")){
+				$("#bubble-1").parent().removeClass("rotate0");
+			}
+			
+		}
+	});
 	
+	$("#bubble-2").click(function(){
+		if (!$("#bubble-2").hasClass("active")){
+			$("#bubble-2").addClass("active");
+			
+			if($("#bubble-1").hasClass("active")){
+				$("#bubble-1").removeClass("active");
+			}
+			
+			if($("#bubble-3").hasClass("active")){
+				$("#bubble-3").removeClass("active");
+			}
+			
+			$("#bubble-2").parent().addClass("rotate0");
+			
+			if ($("#bubble-2").parent().hasClass("rotate2")){
+				$("#bubble-2").parent().removeClass("rotate2");
+			}
+			
+			if ($("#bubble-2").parent().hasClass("rotate1")){
+				$("#bubble-2").parent().removeClass("rotate1");
+			}
+			
+		}
+	});
+	
+	$("#bubble-3").click(function(){
+		if (!$("#bubble-3").hasClass("active")){
+			$("#bubble-3").addClass("active");
+			
+			if($("#bubble-2").hasClass("active")){
+				$("#bubble-2").removeClass("active");
+			}
+			
+			if($("#bubble-1").hasClass("active")){
+				$("#bubble-1").removeClass("active");
+			}
+			
+			$("#bubble-3").parent().addClass("rotate2");
+			
+			if ($("#bubble-3").parent().hasClass("rotate1")){
+				$("#bubble-3").parent().removeClass("rotate1");
+			}
+			
+			if ($("#bubble-3").parent().hasClass("rotate0")){
+				$("#bubble-3").parent().removeClass("rotate0");
+			}
+			
+		}
+	});
 	
 	$("#consult").click(function(){
 		chartToggle($("#consult-list"));

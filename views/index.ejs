@@ -274,7 +274,7 @@
         }  
 
       }
-      
+
       .bubble{
         position:absolute;
         position: absolute;
@@ -314,6 +314,38 @@
         font-size:8rem;
         padding-top:50px;
       }
+      .rotater{
+        margin:200px 0;
+        display:inline-block;
+        position:relative;
+        -webkit-transform-origin-y: 346.8px;
+        transition: transform 1s;
+      }
+      
+      .rotater.rotate0{
+        transform: rotate(0deg);
+      }
+      
+      .rotater.rotate0 .bubble{
+        transform: rotate(0deg);
+      }
+      
+      .rotater.rotate1{
+        transform: rotate(120deg);
+      }
+      
+      .rotater.rotate1 .bubble{
+        transform: rotate(-120deg);
+      }
+      
+      .rotater.rotate2{
+        transform: rotate(240deg);
+      }
+      
+      .rotater.rotate2 .bubble{
+        transform: rotate(-240deg);
+      }
+        
 
     </style>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

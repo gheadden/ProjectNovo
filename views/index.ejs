@@ -27,6 +27,8 @@
     </style>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/base.js"></script>
+
   </head>
   <body>
     <nav class="navbar navbar-default">
@@ -70,6 +72,247 @@
       width: 100%;
       margin: 0 auto;
     }
+
+    body{font-family: 'Josefin Sans', sans-serif;}
+    
+    #what{background-color:#a1cd87;z-index:4;}
+    #how{background-color:#f59457;z-index:3;padding-left:0;padding-right:0;}
+    #who{background-color:#a48678;z-index:2;color:white;}
+    
+    .maindiv{padding:20px 15%; text-align:center;box-shadow: 0 0px 10px 0px #000000;position:relative;}
+    
+    #footer{background-color:rgb(50,50,50);padding-left:15%;padding-right:15%;}
+    .navbar{margin-bottom:0px;padding-bottom:5px;}
+    .videoWrapper {
+        background-color:rgb(0,0,0);
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+      }
+    
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90%;
+    }
+    
+    .title1{font-family: 'Poiret One', cursive; font-size: 3rem;}
+    .title2{font-family: 'Expletus Sans', cursive;font-style:bold; font-size: 3rem;}
+    
+    .navbar-nav>li>a {
+        font-size: 1.7rem;
+    }
+    
+    .headshot{
+        border: 3px solid black;
+    }
+    .bigtext{
+        font-family: 'Expletus Sans', cursive;
+        font-style:bold;
+        font-size: 6rem;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    #trm-container{
+        padding-top:10px;
+        font-size:0;
+        margin: 100px 0;
+        padding-left: 15%;
+        padding-right: 15%;
+        position: relative;
+        z-index:6;
+        background: linear-gradient(to top, transparent 0px, #f59457 20px, #f59457);
+        padding-bottom: 25px;
+    }
+    #wrkflw-container {
+        margin-top:200px;
+        margin-bottom:200px;
+        display:inline-block;
+        width:80%;
+        margin:0 10%;
+    }
+    .active{
+        color:white;
+    }
+    
+    .section-container{
+        padding-top: 20px;
+    }
+    .progress-outline{
+      border: 2px solid #1d1d1d;
+      border-radius: 10px;
+      margin: -2px -17px;
+      
+    }
+  
+    .progress-outline-part:first-child{
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+  
+    .progress-outline-part:last-child{
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+    }
+  
+    .progress-outline-part h2{
+      margin-top:10px;
+    }
+    
+    .passed{
+      color: #f59457;
+    }
+    
+    .pro-bar{
+      position:absolute;
+      top:0;
+      left:0;
+      width:0%;
+      background-color: #1d1d1d;
+      height: 100%;
+      z-index:-1;
+      border:0px;
+    }
+    
+    #bar-1 .pro-bar{
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+    
+    #bar-3 .pro-bar.full{
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+    }
+    
+    .full{
+      width:100%;
+    }
+    
+    .empty{
+      width:0%;
+    }
+    
+    
+    ul li{
+      transition: color 0.5s;
+    }
+    
+    ul.fade-list li{
+      color: transparent;
+    }
+    
+    ul.visible li{
+      color: #1d1d1d;
+    }
+    
+    .cont{
+      border-top: 2px solid #1d1d1d;
+      border-bottom: 2px solid #1d1d1d;
+      margin:0 20%;
+      transition: margin 0.5s;
+      margin-bottom: 60px;
+    }
+    
+    .cont.stretch{
+      margin:0;
+      margin-bottom:60px;
+    }
+    
+    .chart-btn{
+      margin:0;
+      padding: 10px 0;
+      font-weight: 700;
+    }
+    
+    .que{
+      position:relative;
+      top:-5px;
+      left: 10px;
+      font-size:0.5em;
+      cursor:pointer;
+      font-weight:400;
+      font-style:normal;
+    }
+    
+    .outer{
+      text-align:left;
+      margin-left:50px;
+      font-style:italic;
+    }
+    
+    .next-lvl{
+      margin-left:50px;
+      font-style:normal;
+    }
+    
+    #launch{
+      font-size:3.5em;
+      margin:10px 0;
+    }
+    
+    @media (max-width: 767px){
+      
+      .progress-outline-part h2{
+        margin-top:2px;
+        margin-bottom:2px;
+      }
+      
+      .progress-outline{
+        border:none;
+      }
+      
+      #trm-container.fix #word-container .progress-outline-part{
+        border: 2px solid #1d1d1d;
+        margin-bottom:5px;
+        border-radius:7px;
+      }
+      
+      .pro-bar{
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+      
+      #bar-1 .pro-bar{
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+      
+      .pro-bar.full{
+        border-radius: 3px;
+      }
+      
+      #bar-3 .pro-bar.full{
+        border-radius: 3px;
+      }
+      
+      .cont{
+        margin:0 5%;
+        margin-bottom:60px;
+      }
+      
+      .hide-mobile{
+        display:none;
+      }
+      
+      #wrkflowm-container{
+        margin:0;
+        width:100%:
+      }
+      
+      .que{
+        left:35px;
+      }
+      
+      .outer{
+        margin-left:50px;
+      }  
+
+    }
+
+
+
     </style>
 
     <div style="width:100%;">
@@ -115,21 +358,454 @@
       <p class="lead">technology is continuously evolving, it's our job to stay up to date, it's your job to run your business.</p>
 
       <h5>#buzzowrds</h5>
-      collaborative/open, boundless, creative, functional, customer driven
-
-
-
-
-      <!--<h2><b>Creative</b>, <b>clear-cut</b>, and <b>engaging</b> websites <b>built-from-scratch</b> at a price that provides maximum value out of your technological presence.</h2>
-      <br><br>
-    
-      <h2>We provide you and your customers with a technological experience that expresses <b>who you are</b>, <b>who you want to be</b>, and <b>how you are percieved</b>.</h2>
-      <br><br>
-          
-      <h1>client logos here</h1>-->
+      collaborative/open, boundless, creative, functional, customer drive
 
 
     </div>
+
+
+    <!-- workflow -->
+
+    <div id="how" class="maindiv">
+      <h1 class="bigtext" id="workflow">our workflow</h1>
+      <div id="trm-container" class="container-fluid">
+        <!--maybe arrow symbols between each thing?-->
+        <div id="word-container" class="row">
+          <div id="bar-1" class="col-sm-4 progress-outline-part">
+            <h2 id="strat-wrd">
+              <span>Strategy</span>
+            </h2>
+            <div class="pro-bar"></div>
+          </div>
+          <div id="bar-2" class="col-sm-4 progress-outline-part">
+            <h2 id="dev-wrd">
+              <span>Developement</span>
+            </h2>
+            <div class="pro-bar"></div>
+          </div>
+          <div id="bar-3" class="col-sm-4 progress-outline-part">
+            <h2 id="main-wrd">
+              <span>Maintenance</span>
+            </h2>
+            <div class="pro-bar"></div>
+          </div>
+        </div>
+      </div>
+      <div id="wrkflw-container">
+        <div id="strategy" class="section-container container-fluid">
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="consult" class="chart-btn">Consultation <kbd class="que">?</kbd></h2>
+                <ul id="consult-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>We look at:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>What you want</h3></li>
+                    <li><h3>What you expect from us</h3></li>
+                    <li><h3>What is best for your Customer</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="proposal" class="chart-btn">Project Proposal <kbd class="que">?</kbd></h2>
+                <ul id="proposal-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>This includes:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Analyzing your bussiness environment</h3></li>
+                    <li><h3>Combining our findings with information from consultation</h3></li>
+                    <li><h3>Forming a cohesive, targeted strategy</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="design" class="chart-btn">Design & Brand Meetings <kbd class="que">?</kbd></h2>
+                <ul id="design-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>What we discuss:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Learn your workplace</h3></li>
+                    <li><h3>How you do things</h3></li>
+                    <li><h3>Who you are</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="marketing" class="chart-btn">Marketing Research <kbd class="que">?</kbd></h2>
+                <ul id="marketing-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>What we look at:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Strengths</h3></li>
+                    <li><h3>Weaknesses</h3></li>
+                    <li><h3>Oppurtunities</h3></li>
+                    <li><h3>Threats</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="marketing-pro" class="chart-btn">Marketing Proposal <kbd class="que">?</kbd></h2>
+                <ul id="marketing-pro-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>We communicate:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Goals</h3></li>
+                    <li><h3>Visions</h3></li>
+                    <li><h3>Ideas</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="developement" class="section-container container-fluid">
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="design-pro" class="chart-btn">Design Proposal <kbd class="que">?</kbd></h2>
+                <ul id="design-pro-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>This includes:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Brand & Design fusion</h3></li>
+                    <li><h3>Site Wireframe</h3></li>
+                    <li><h3>General branding strategy</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="design-re" class="chart-btn">Design Review <kbd class="que">?</kbd></h2>
+                <ul id="design-re-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>What you do:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Review our design</h3></li>
+                    <li><h3>Assess its effectiveness</h3></li>
+                    <li><h3>Critique to improve</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="content-cre" class="chart-btn">Content Creation <kbd class="que">?</kbd></h2>
+                <ul id="content-cre-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>What we do:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Review the content</h3></li>
+                    <li><h3>Assess the message</h3></li>
+                    <li><h3>Suggest content changes</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="content-re" class="chart-btn">Content Review <kbd class="que">?</kbd></h2>
+                <ul id="content-re-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>What you do:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Review the content</h3></li>
+                    <li><h3>Assess the message</h3></li>
+                    <li><h3>Suggest content changes</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="site-dev" class="chart-btn">Site development <kbd class="que">?</kbd></h2>
+                <ul id="site-dev-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>This is on us:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>We write the code</h3></li>
+                    <li><h3>Style the elements</h3></li>
+                    <li><h3>Integrate web applications</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="plat-test" class="chart-btn">Platform & Browser Testing <kbd class="que">?</kbd></h2>
+                <ul id="plat-test-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>Every possible user platform</li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                      <li><h3>iPhone</h3></li>
+                      <li><h3>iPad</h3></li>
+                      <li><h3>Android</h3></li>
+                      <li><h3>Tablet</h3></li>
+                    </ul>
+                  </li>
+                  <li><h2>Every possible browser</li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                      <li><h3>Chrome</h3></li>
+                      <li><h3>Explorer</h3></li>
+                      <li><h3>Firefox</h3></li>
+                      <li><h3>Safari</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="site-pro" class="chart-btn">Site Proposal <kbd class="que">?</kbd></h2>
+                <ul id="site-pro-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>"Internal Launch:"</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Initial Partner Review</h3></li>
+                    <li><h3>Company-wide Launch</h3></li>
+                    <li><h3>Employee Feedback</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="site-re" class="chart-btn">Site Review <kbd class="que">?</kbd></h2>
+                <ul id="site-re-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>What you do:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Review site design</h3></li>
+                    <li><h3>Assess customer experience & usability</h3></li>
+                    <li><h3>Critique site effectiveness</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="cont">
+                <h2 id="changes" class="chart-btn">We make changes if needed</h2>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="cont">
+                <h2 id="launch" class="chart-btn">Coordinated Launch <kbd class="que">?</kbd></h2>
+                <ul id="launch-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>This includes:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Full-scale marketing launch</h3></li>
+                    <li><h3>Social media coordination</h3></li>
+                    <li><h3>Targeted Customer notification</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div id="maintenance" class="section-container container-fluid">
+          
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="seo" class="chart-btn">Monthly Search Engine Optimization (SEO) <kbd class="que">?</kbd></h2>
+                <ul id="seo-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>Stay highly ranked in every search engine:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Focused site content</h3></li>
+                    <li><h3>Logical coding structure</h3></li>
+                    <li><h3>Platform Compatibility</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="analysis" class="chart-btn">Monthly Content Analysis <kbd class="que">?</kbd></h2>
+                <ul id="analysis-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>This includes:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Sweeping</h3></li>
+                    <li><h3>Assessing</h3></li>
+                    <li><h3>Updating</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="update" class="chart-btn">Monthly Styling Update <kbd class="que">?</kbd></h2>
+                <ul id="update-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>What we ensure:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Up-to-date design & layout</h3></li>
+                    <li><h3>Branding Integration</h3></li>
+                    <li><h3>Modern, functional web animations</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="security" class="chart-btn">Monthly Security Update <kbd class="que">?</kbd></h2>
+                <ul id="security-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>What we protect:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Your files & databases</h3></li>
+                    <li><h3>Your spam protocol</h3></li>
+                    <li><h3>Your website from attacks</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="edit" class="chart-btn">Per-Request Content Edit <kbd class="que">?</kbd></h2>
+                <ul id="edit-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>Want to make a minor change?</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Contact us</h3></li>
+                    <li><h3>Describe your vision</h3></li>
+                    <li><h3>We do the rest</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="cont">
+                <h2 id="addition" class="chart-btn">Per-Request Content Addition <kbd class="que">?</kbd></h2>
+                <ul id="addition-list" class="list-unstyled fade-list outer" style="display:none;">
+                  <li><h2>Have a new product? </h2></li>
+                  <li><h2>We do:</h2></li>
+                  <li><ul class="list-unstyled fade-list next-lvl">
+                    <li><h3>Simple product additions</h3></li>
+                    <li><h3>Single-page product release spread</h3></li>
+                    <li><h3>Coordinated technological product launch</h3></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6"></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!--workflow /-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <div id="section2">
       <br><br>

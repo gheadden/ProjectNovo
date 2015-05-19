@@ -274,6 +274,46 @@
         }  
 
       }
+      
+      .bubble{
+        position:absolute;
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background: green;
+        border-radius: 100px;
+        padding-top: 60px;
+        font-size:4rem;
+        transition: transform 1s;
+      }
+        
+      #what{
+        overflow:hidden;
+        text-align:center;
+        font-size:0;
+      }
+      
+      #bubble-1{
+        top:440px;
+        left:-100px;
+      }
+      
+      #bubble-2{
+        top:-75px;
+        left:200px;
+      }
+      
+      #bubble-3{
+        top:440px;
+        left:500px;
+      }
+      
+      #bubble-4{
+        top:246.8px;
+        left:200px;
+        font-size:8rem;
+        padding-top:50px;
+      }
 
     </style>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -327,13 +367,14 @@
 
     <div id="section1">
       <br><br>
-
+      <div id="what">
       <div class="rotater rotate0">
         <img class="tri" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Green_equilateral_triangle_point_up.svg/600px-Green_equilateral_triangle_point_up.svg.png">
         <div id="bubble-1" class="bubble">Strategy</div>
         <div id="bubble-2" class="bubble active">Brand</div>
         <div id="bubble-3" class="bubble">Design</div>
         <div id="bubble-4" class="bubble">N</div>
+      </div>
       </div>
 
 

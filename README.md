@@ -1,4 +1,6 @@
-# givingfor
+# project novo
 
-giving :D
+novo == change
+
+changing web development (we're more than this)
 

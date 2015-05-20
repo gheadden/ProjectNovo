@@ -284,7 +284,11 @@
         border-radius: 100px;
         padding-top: 50px;
         font-size: 3rem;
-        transition: transform 1s;
+        -webkit-transition: transform 1s, -webkit-transform 1s, -ms-transform 1s, -moz-transform 1s, -o-transform 1s;
+        -ms-transition: transform 1s, -webkit-transform 1s, -ms-transform 1s, -moz-transform 1s, -o-transform 1s;
+        -moz-transition: transform 1s, -webkit-transform 1s, -ms-transform 1s, -moz-transform 1s, -o-transform 1s;
+        -o-transition: transform 1s, -webkit-transform 1s, -ms-transform 1s, -moz-transform 1s, -o-transform 1s;
+        transition: transform 1s, -webkit-transform 1s, -ms-transform 1s, -moz-transform 1s, -o-transform 1s;
       }
         
       #what{
@@ -314,36 +318,68 @@
         font-size: 6rem;
         padding-top: 40px;
       }
-      
+
       .rotater{
         margin: 100px 0;
         display: inline-block;
         position: relative;
         -webkit-transform-origin-y: 260px;
-        transition: transform 1s;
+        -moz-transform-origin-y: 260px;
+        -o-transform-origin-y: 260px;
+        -ms-transform-origin-y: 260px;
+        transform-origin-y: 260px;
+        -webkit-transition: transform 1s, -webkit-transform 1s, -ms-transform 1s, -moz-transform 1s, -o-transform 1s;
+        -ms-transition: transform 1s, -webkit-transform 1s, -ms-transform 1s, -moz-transform 1s, -o-transform 1s;
+        -moz-transition: transform 1s, -webkit-transform 1s, -ms-transform 1s, -moz-transform 1s, -o-transform 1s;
+        -o-transition: transform 1s, -webkit-transform 1s, -ms-transform 1s, -moz-transform 1s, -o-transform 1s;
+        transition: transform 1s, -webkit-transform 1s, -ms-transform 1s, -moz-transform 1s, -o-transform 1s;
       }
       
       .rotater.rotate0{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
         transform: rotate(0deg);
       }
       
       .rotater.rotate0 .bubble{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
         transform: rotate(0deg);
       }
       
       .rotater.rotate1{
+        -webkit-transform: rotate(120deg);
+        -ms-transform: rotate(120deg);
+        -moz-transform: rotate(120deg);
+        -o-transform: rotate(120deg);
         transform: rotate(120deg);
       }
       
       .rotater.rotate1 .bubble{
+        -webkit-transform: rotate(-120deg);
+        -ms-transform: rotate(-120deg);
+        -moz-transform: rotate(-120deg);
+        -o-transform: rotate(-120deg);
         transform: rotate(-120deg);
       }
       
       .rotater.rotate2{
+        -webkit-transform: rotate(240deg);
+        -ms-transform: rotate(240deg);
+        -moz-transform: rotate(240deg);
+        -o-transform: rotate(240deg);
         transform: rotate(240deg);
       }
       
       .rotater.rotate2 .bubble{
+        -webkit-transform: rotate(-240deg);
+        -ms-transform: rotate(-240deg);
+        -moz-transform: rotate(-240deg);
+        -o-transform: rotate(-240deg);
         transform: rotate(-240deg);
       }
         

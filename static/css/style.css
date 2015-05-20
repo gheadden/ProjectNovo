@@ -166,7 +166,7 @@ img{
 .slider_overlay {
   background: none repeat scroll 0 0 #242434;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.6;
   position: absolute;
   right: 0;
   top: 0;
@@ -310,7 +310,7 @@ img{
 /*===SLIDER CAPTION===*/
 
 .slider_caption {
-  margin-top: 12%;
+  //margin-top: 12%;
   padding: 0 13%;
   position: relative;
   text-align: center;

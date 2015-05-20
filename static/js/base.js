@@ -356,7 +356,7 @@ $(document).ready(function(){
 		
 	});
 	
-	$("#bubble-1").hover(function(){
+	$("#bubble-1").click(function(){
 		if (!$("#bubble-1").hasClass("active")){
 			$("#bubble-1").addClass("active");
 			
@@ -381,7 +381,7 @@ $(document).ready(function(){
 		}
 	});
 	
-	$("#bubble-2").hover(function(){
+	$("#bubble-2").click(function(){
 		if (!$("#bubble-2").hasClass("active")){
 			$("#bubble-2").addClass("active");
 			
@@ -406,7 +406,7 @@ $(document).ready(function(){
 		}
 	});
 	
-	$("#bubble-3").hover(function(){
+	$("#bubble-3").click(function(){
 		if (!$("#bubble-3").hasClass("active")){
 			$("#bubble-3").addClass("active");
 			

@@ -42,6 +42,16 @@ h2 {
   padding-bottom: 10px;
   text-transform: uppercase;
 }
+
+.logo1{
+  font-family: 'Poiret One', cursive;
+}
+
+.logo2{
+  font-family: 'Expletus Sans', cursive;
+  font-style: bold;
+}
+
 img{
  border:none;
 }

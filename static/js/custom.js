@@ -13,7 +13,7 @@ jQuery(function($){
 
 
     /* ----------------------------------------------------------- */
-	/*  1a. MOBILE MENU ACTIVE CLOSE 
+	/*  1a. Triangle animations
 	/* ----------------------------------------------------------- */ 
 
 	//set the triangle as a variable

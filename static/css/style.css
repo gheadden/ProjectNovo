@@ -993,6 +993,11 @@ textarea .form-control {
 
 }
 
+@media(min-width:767px ){
+  .slider_caption{margin-top:200px;}
+}
+
+
 @media(max-width:480px ){	
 	#slides {height: 320px !important;}
 	.slider_caption {margin-top: 20%;}

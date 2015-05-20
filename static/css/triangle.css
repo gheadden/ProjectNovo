@@ -13,6 +13,7 @@
   transition: transform 1s;
   background: rgb(27, 97, 178);
   border: 1px solid rgb(85, 154, 234);
+  color: rgb(85, 154, 234);
 }
       
 
@@ -36,6 +37,7 @@
   left: 150px;
   font-size: 6rem;
   padding-top: 40px;
+  border:none;
 }
 
 .tri{
@@ -109,15 +111,15 @@
   transform: rotate(-240deg);
 }
 
-rotater.rotate0 #bubble-2{
+.rotater.rotate0 #bubble-2{
   color:white;
 }
 
-rotater.rotate1 #bubble-3{
+.rotater.rotate1 #bubble-3{
   color:white;
 }
 
-rotater.rotate2 #bubble-1{
+.rotater.rotate2 #bubble-1{
   color:white;
 }
 
@@ -132,9 +134,9 @@ rotater.rotate2 #bubble-1{
   }
 
   .bubble{
-    height: 100px;
+    height: 50px;
     width: 100px;
-    padding-top: 40px;
+    padding-top: 10px;
     font-size:2rem;
   }
 

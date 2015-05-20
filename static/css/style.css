@@ -45,12 +45,12 @@ h2 {
 
 .logo1{
   font-family: 'Poiret One', cursive;
+  font-weight:400;
   color:white !important;
 }
 
 .logo2{
   font-family: 'Expletus Sans', cursive;
-  font-style: bold;
   color:white !important;
 }
 

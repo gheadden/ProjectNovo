@@ -50,7 +50,7 @@
   display: inline-block;
   position: absolute;
   right:650px;
-  bottom:20px;
+  top:-20px;
   z-index:3;
   -webkit-transform-origin-y: 260px;
   -moz-transform-origin-y: 260px;

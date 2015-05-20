@@ -3,7 +3,6 @@
   position: absolute;
   height: 150px;
   width: 150px;
-  background: green;
   border-radius: 100px;
   padding-top: 50px;
   font-size: 3rem;
@@ -12,6 +11,8 @@
   -moz-transition: -moz-transform 1s;
   -o-transition: -o-transform 1s;
   transition: transform 1s;
+  background: rgb(27, 97, 178);
+  border: 1px solid rgb(85, 154, 234);
 }
       
 
@@ -46,6 +47,7 @@
   margin: 100px 0;
   display: inline-block;
   position: absolute;
+  right:500px;
   z-index:3;
   -webkit-transform-origin-y: 260px;
   -moz-transform-origin-y: 260px;
@@ -107,6 +109,18 @@
   transform: rotate(-240deg);
 }
 
+rotater.rotate0 #bubble-2{
+  color:white;
+}
+
+rotater.rotate1 #bubble-3{
+  color:white;
+}
+
+rotater.rotate2 #bubble-1{
+  color:white;
+}
+
 @media(max-width: 5000px){
   .rotater{
     -webkit-transform-origin-y: 86.7px;
@@ -125,25 +139,25 @@
   }
 
   #bubble-1{
-    top: 80px;
+    top: 105px;
     left: -50px;
   }
 
   #bubble-2{
-    top: -50px;
+    top: -25px;
     left: 25px;
   }
 
   #bubble-3{
-    top: 80px;
+    top: 105px;
     left: 100px;
   }
 
   #bubble-4{
-    top: 36.7px;
+    top: 61.7px;
     left: 25px;
     font-size: 4rem;
-    padding-top: 20px;
+    padding-top: 0;
     background: transparent;
   }
 }

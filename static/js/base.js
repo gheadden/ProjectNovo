@@ -305,6 +305,11 @@ $(document).ready(function(){
 				"width": String(percentage) + "%"
 			});
 			
+				mainWrd.removeClass("passed");
+			}
+			
+			if (bar3.hasClass("full")){
+				bar3.removeClass("full");
 			if (!mainWrd.hasClass("active")){
 				mainWrd.addClass("active");
 				if (!devBar.hasClass("hide-mobile")){
@@ -316,11 +321,6 @@ $(document).ready(function(){
 			}
 			
 			if (mainWrd.hasClass("passed")){
-				mainWrd.removeClass("passed");
-			}
-			
-			if (bar3.hasClass("full")){
-				bar3.removeClass("full");
 			}
 			
 			if (bar3.hasClass("empty")){

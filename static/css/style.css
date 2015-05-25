@@ -252,7 +252,7 @@ img{
 }
 
 .slides-navigation a.next::after,
-.nslides-navigation a.next .icon-wrap::after {
+.slides-navigation a.next .icon-wrap::after {
 	-webkit-transform: translateX(-50%) rotate(45deg);
 	transform: translateX(-50%) rotate(45deg);
 	-webkit-transform-origin: 100% 0%;

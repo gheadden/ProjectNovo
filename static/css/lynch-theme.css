@@ -1,11 +1,11 @@
 
 .scrollToTop{
-  background-color: #BC5E19;
+  background-color: #B86F4C;
 }
 .scrollToTop:hover,.scrollToTop:focus{
-  background-color: #EEEBDD;
-  color: #C8C6B3;
-  border: 1px solid #BC5E19;
+  background-color: #B86F4C;
+  color: #FFFFFF;
+  border: 1px solid #B86F4C;
 }
 .navbar-brand > span {
   color: #6C7A89;
@@ -27,34 +27,34 @@
 .slides-navigation a::after,
 .slides-navigation .icon-wrap::before,
 .slides-navigation .icon-wrap::after {
-  background: rgba(188, 94, 25, 0.56);
+  background: #AB7D63;
 }
 .slides-pagination a {
-  border: 2px solid #EEEBDD;
+  border: 2px solid #FFFFFF;
 }
 .heading h2 {
-  border-bottom: 11px solid #BC5E19;
+  border-bottom: 11px solid #B86F4C;
 }
 .panel-title a:hover{
-  color: #BC5E19; 
+  color: #B86F4C; 
 }
 .panel-title a span{
-  color: #BC5E19;   
+  color: #B86F4C;   
 }
 .service_icon{
-  background-color: #BC5E19;
+  background-color: #FFFFFF;
 }
 
 .single_service:hover .service_icon{  
-  color: #BC5E19;
-  border: 2px solid #BC5E19;
-  background-color: #EEEBDD;
+  color: #A5603F;
+  border: 2px solid #DAC4A9;
+  background-color: #DAC4A9;
 }
 .single_service:hover .service_title{
-  color: #131311;
+  color: #202425;
 }
 .single_service > .service_title:after {
-  background-color: #BC5E19;
+  background-color: #B86F4C;
 }
 .heading h3 {
   border-bottom: 5px solid #6C7A89;
@@ -69,7 +69,7 @@
   background-color: #6C7A89;
 }
 .slick-prev, .slick-next {
-  background-color: #BC5E19;
+  background-color: #B86F4C;
 }
 .single_price .price {
   background-color: #6C7A89; 
@@ -119,13 +119,13 @@
   background:#6C7A89;  
 }
 .single_contact_feaured > i {
-  color: #BC5E19;
+  color: #B86F4C;
 }
 .subscr_btn {
-  background-color: #BC5E19;
+  background-color: #B86F4C;
 }
 .footer_left > p a {
-  color: #BC5E19;
+  color: #B86F4C;
   font-weight: bold;
 }
 .social_nav li a:hover{
@@ -133,8 +133,8 @@
   border-color: #6C7A89; 
 }
 .panel-default .in{
-  border-color: #BC5E19;
-  border-left: 5px solid #BC5E19;
+  border-color: #B86F4C;
+  border-left: 5px solid #AB7D63;
 }
 .about_slider .slick-dots li.slick-active button:before {
   color: #6C7A89;

@@ -58,6 +58,9 @@
   overflow: hidden;
   text-indent: -100%;
 }
+.slides-pagination a:hover {
+  border: 2px solid #B86F4C;
+}
 .slides-pagination a.current {
-  background: #222;
+  background: #B86F4C;
 }

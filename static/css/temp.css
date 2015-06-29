@@ -5,7 +5,6 @@
 	margin-left: auto;
 	text-align: center;
 	font-size: 4em;
-	line-height: 50%;
 	color: #1d1d1d;
 
 }
@@ -41,6 +40,18 @@
 }
 .contact a
 {
+	font-family: 'Nova Square', cursive;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
 	text-decoration: none;
+	color: #00b999;
+}
+.contact a:hover
+{
+	font-family: 'Nova Square', cursive;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
 	color: #00b999;
 }

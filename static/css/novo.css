@@ -1,3 +1,11 @@
+.triangle{
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 350px 175px 0 175px;
+	border-color: #00b99a transparent transparent transparent;
+}
+
 .header1
 {
 	font-family: 'Nova Square', cursive;
